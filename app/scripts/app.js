@@ -6,20 +6,14 @@
                 requireBase: false
             });
         $stateProvider
-         .state('index', {
-             url: '/',
-             controller: 'indexCtrl as index',
-             templateUrl: '/pages/index.html'
-         })
-         $stateProvider
-         .state('home', {
-             url: '/',
-             controller: 'homeCtrl as home',
-             templateUrl: '/templates/home.html'
-         });
+             .state('home', {
+                 url: '/',
+                 controller: 'homeCtrl as home',
+                 templateUrl: '/templates/home.html'
+             });
      }
  
      angular
-         .module('blocItOff','firebase', ['ui.router'])
+         .module('blocItOff', ['ui.router'])
          .config(config);
  })();

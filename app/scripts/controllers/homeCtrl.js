@@ -1,8 +1,8 @@
 (function() {
-    function HomeCtrl($scope) {
+    function homeCtrl($scope, $firebaseArray) {
     }
     
     angular
         .module('blocItOff')
-        .controller('HomeCtrl', ['$scope', '$firebaseArray', HomeCtrl]);
+        .controller('homeCtrl', ['$scope', '$firebaseArray',homeCtrl]);
 })();
