@@ -1,0 +1,15 @@
+.main-box {
+    margin: 0 auto;
+    width: 20%;
+    position: absolute;
+}
+
+.main-box-title {
+    margin: 100%;
+    height: 10%;
+}
+
+.individual-task {
+    width: 100%;
+    position: relative;
+}
