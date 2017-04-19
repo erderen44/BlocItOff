@@ -14,6 +14,6 @@
      }
  
      angular
-         .module('blocItOff', ['ui.router'])
+         .module('blocItOff', ['ui.router', 'firebase'])
          .config(config);
  })();
