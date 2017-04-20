@@ -1,6 +1,6 @@
 (function() {
      function Tasks() {
-         var Jobs = [
+         var jobs = [
           {
             "Name" : "Feed the Fish",
             "Age" : "1",
@@ -13,15 +13,16 @@
           },     
           {
             "Name" : "Mop the Floor",
-            "Age" : "8"
+            "Age" : "8",
             "Completed" : "No"
           },
           {
             "Name" : "Do the Dishes",
-            "Age" : "5"
+            "Age" : "5",
             "Completed" : "No"
           }            
           ]
+        return jobs;
      };    
         
 //         Fixtures.getAlbum = function() {
@@ -36,7 +37,7 @@
 //            return albumsArray; 
 //     }
          
-         return Jobs;
+        
 //     }
  
      angular

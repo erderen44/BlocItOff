@@ -1,6 +1,6 @@
 (function() {
     function homeCtrl($scope, Tasks, $firebaseArray) {
-//        this.Tasks = tasks.Tasks;
+       $scope.jobs = Tasks;
     }
     
     angular
