@@ -1,12 +1,13 @@
 (function() {
-    function IndexCtrl($scope, $firebaseArray) {
+    function indexCtrl($scope, $firebaseArray) {
         var ref = firebase.database().ref();
         var list = $firebaseArray(ref);
+        $scope.list = list;
     }
     
     angular
         .module('blocItOff')
-        .controller('IndexCtrl', ['$scope', '$firebaseArray', IndexCtrl]);
+        .controller('indexCtrl', ['$scope', '$firebaseArray', indexCtrl]);
 })();
 
 
