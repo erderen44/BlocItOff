@@ -1,46 +1,22 @@
-(function() {
-     function Tasks() {
-         var jobs = [
-          {
-            "Name" : "Feed the Fish",
-            "Age" : "1",
-            "Completed" : "Yes"
-          },
-          {
-            "Name" : "Water the Plants",
-            "Age" : "6",
-            "Completed" : "No"
-          },     
-          {
-            "Name" : "Mop the Floor",
-            "Age" : "8",
-            "Completed" : "No"
-          },
-          {
-            "Name" : "Do the Dishes",
-            "Age" : "5",
-            "Completed" : "No"
-          }            
-          ]
-        return jobs;
-     };    
-        
-//         Fixtures.getAlbum = function() {
-//            return albumPicasso;
+//(function() {
+//     function addTasks($scope, $firebaseArray) {
+//         console.log("tasks")
+//         var tasksRef = new Firebase("https://blocitoff-e911e.firebaseio.com/");
+//         
+//         $scope.tasks = $firebaseArray(tasksRef);
+//         var jobs = ["Feed the Fish","Water the Plants","Mop the Floor","Do the Dishes"];
+//          $scope.addTask = function() {   
+//                $scope.tasks.$add({
+//              jobs
+////              return jobs;
+//                });
+//        };
 //     };
 //         
-//         Fixtures.getCollection = function(numberOfAlbums) {
-//            albumsArray = []; 
-//            for (i=0; i < numberOfAlbums; i++) {
-//                albumsArray.push(albumPicasso);
-//            }           
-//            return albumsArray; 
-//     }
-         
-        
-//     }
- 
-     angular
-         .module('blocItOff')
-         .factory('Tasks', Tasks);
- })();
+//         
+//         
+//     angular
+//         .module('blocItOff')
+//         .factory('addTasks', ['$scope', '$firebaseArray', addTasks]);
+// })();
+//

@@ -1,20 +1,23 @@
 (function() {
-    function homeCtrl($scope, Tasks, $firebaseArray) {
-       $scope.jobs = Tasks;
-    }
+    function homeCtrl($scope, $firebaseArray) {
+        
+        console.log("tasks")
+         var tasksRef = new Firebase("https://blocitoff-e911e.firebaseio.com/");
+//         
+//         $scope.tasks = $firebaseArray(tasksRef);
+//        console.log($scope.tasks)
+//         var jobs = ["Feed the Fish","Water the Plants","Mop the Floor","Do the Dishes"];
+//          $scope.addTask = function() {   
+//                $scope.tasks.$add({
+//              jobs
+////              return jobs;
+//                });
+//            };
+        };
     
     angular
         .module('blocItOff')
-        .controller('homeCtrl', ['$scope', 'Tasks', '$firebaseArray', homeCtrl]);
+        .controller('homeCtrl', ['$scope', '$firebaseArray', homeCtrl]);
 })();
 
-//(function () {
-//    function CollectionCtrl(Fixtures) {
-//        this.albums = Fixtures.getCollection(12);
-//     }
-// 
-//     angular
-//         .module('blocJams')
-//         .controller('CollectionCtrl', ['Fixtures', CollectionCtrl]);
-// })();
 
