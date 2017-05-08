@@ -1,18 +1,11 @@
 (function() {
     function homeCtrl($scope, $firebaseArray) {
-        
-        console.log("tasks")
-         var tasksRef = new Firebase("https://blocitoff-e911e.firebaseio.com/");
-//         
-//         $scope.tasks = $firebaseArray(tasksRef);
-//        console.log($scope.tasks)
-//         var jobs = ["Feed the Fish","Water the Plants","Mop the Floor","Do the Dishes"];
-//          $scope.addTask = function() {   
-//                $scope.tasks.$add({
-//              jobs
-////              return jobs;
-//                });
-//            };
+        var ref = firebase.database().ref()
+        $scope.tasks = $firebaseArray(ref);
+//         var jobs = "Feed the Fish","Water the Plants","Mop the Floor","Do the Dishes"];
+        $scope.tasks.$add({
+            task: "Clean"
+        });
         };
     
     angular
