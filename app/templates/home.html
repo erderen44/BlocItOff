@@ -1,7 +1,8 @@
 <section>
     <div class="main-box">
         <div class="main-box-title"><span class="title">Current Tasks</span></div>
-<!--        <div id="IndividualTask">hello!</div> -->
-        <div class="individual-task" ng-repeat="task in tasks">{{task.task}}</div> 
+        <div class="individual-task" ng-repeat="(id, task) in tasks">
+            <div ng-click="deleteTask(id)">{{task.task}}</div>
+        </div> 
     </div>
 </section>
