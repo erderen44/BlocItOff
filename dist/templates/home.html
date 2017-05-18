@@ -5,4 +5,12 @@
             <div ng-click="deleteTask(id)">{{task.task}}</div>
         </div> 
     </div>
+    <form name="addTaskForm" ng-submit="addATask()">
+        <label>
+            Task:
+            <input type="text" name="newTask" ng-model="anAddedTask">
+            <input type="submit">
+        </label>
+    <div>You added this: {{anAddedTask}}</div>
+    </form>
 </section>
